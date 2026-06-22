@@ -1,0 +1,40 @@
+---
+title: Nx Astro Starlight Template
+description: Production-ready documentation site powered by Astro Starlight and Nx.
+template: splash
+hero:
+  tagline: Ship beautiful docs fast - with Nx caching, shared components, and zero config.
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Get Started
+      link: /guides/getting-started/
+      icon: right-arrow
+    - text: View on GitHub
+      link: https://github.com/nrwl/astro-starlight-template
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What you get
+
+<CardGrid stagger>
+  <Card title="Astro Starlight" icon="open-book">
+    World-class documentation UX: full-text search, dark mode, i18n,
+    and accessible navigation out of the box.
+  </Card>
+  <Card title="Nx-powered monorepo" icon="rocket">
+    Intelligent build caching, affected commands, and a project graph so
+    your docs build only when they need to.
+  </Card>
+  <Card title="Shared component library" icon="puzzle">
+    `@astro-starlight-template/ui-components` ships utility helpers
+    (slugify, readingTime, formatDate) ready to import in any MDX page.
+  </Card>
+  <Card title="Nx Cloud ready" icon="cloud">
+    One command connects your repo to [Nx Cloud](https://cloud.nx.app)
+    for remote caching and distributed task execution across your team.
+  </Card>
+</CardGrid>

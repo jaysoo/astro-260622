@@ -1,0 +1,18 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "name": "ui-components",
+  "projectType": "library",
+  "sourceRoot": "packages/ui-components/src",
+  "tags": ["type:lib", "scope:shared"],
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx tsc --noEmit",
+        "cwd": "{projectRoot}"
+      },
+      "cache": true,
+      "inputs": ["default"]
+    }
+  }
+}
